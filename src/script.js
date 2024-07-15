@@ -37,7 +37,7 @@ let position = 0;
 
 // gltf Loader
 const gltfLoader = new GLTFLoader();
-gltfLoader.load('/model/swedish-royal/scene.gltf', (gltf) => {
+gltfLoader.load('./model/swedish-royal/scene.gltf', (gltf) => {
   console.log('Our model here!', gltf);
   const model = gltf.scene;
   scene.add(model);
